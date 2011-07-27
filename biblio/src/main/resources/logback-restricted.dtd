@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT configuration (appender | logger | root)*>
+<!ELEMENT appender (encoder)>
+<!ATTLIST appender name CDATA #REQUIRED>
+<!ATTLIST appender class CDATA #REQUIRED>
+<!ELEMENT encoder (pattern)>
+<!ELEMENT pattern (#PCDATA)>
+<!ELEMENT logger (#PCDATA)>
+<!ATTLIST logger name CDATA #REQUIRED>
+<!ATTLIST logger level CDATA #REQUIRED>
+<!ELEMENT root (appender-ref)>
+<!ATTLIST root level CDATA #REQUIRED>
+<!ELEMENT appender-ref (#PCDATA)>
+<!ATTLIST appender-ref ref CDATA #REQUIRED>
+<!ELEMENT none EMPTY>

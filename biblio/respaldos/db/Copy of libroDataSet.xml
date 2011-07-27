@@ -1,0 +1,39 @@
+<!DOCTYPE dataset SYSTEM "dataset.dtd">
+<!--DOCTYPE dataset SYSTEM "my-dataset.dtd"-->
+<!--
+<dataset>
+    <LIBRO TITULO="JAVA TEST" 
+                EDICION="1"
+    /> 
+    <LIBRO TITULO="NOT THIS TIME"/>
+    <!- - SECOND_TABLE COL0="row 0 col 0" 
+                  COL1="row 0 col 1" />
+    <EMPTY_TABLE/ - ->
+</dataset>
+-->
+<dataset>
+    <table name="LIBRO">
+        <column>TITULO</column>
+        <column>EDICION</column>
+        <row>
+            <value>JAVA WORLD</value>
+            <value>1</value>
+        </row>
+        <row>
+            <value>TWO JAVA</value>
+            <value>1</value>
+        </row>
+        <row>
+            <value>other</value>
+            <value>1</value>
+        </row>
+    </table>
+    <!--table name="SECOND_TABLE">
+        <column>COLUMN0</column>
+        <column>COLUMN1</column>
+        <row>
+            <value>row 0 col 0</value>
+            <value>row 0 col 1</value>
+        </row>
+    </table-->
+</dataset>

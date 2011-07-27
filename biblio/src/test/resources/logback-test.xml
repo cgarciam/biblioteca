@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dataset SYSTEM "logback-restricted.dtd">
+<configuration>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<!--
+			encoders are assigned the type
+			ch.qos.logback.classic.encoder.PatternLayoutEncoder by default
+		-->
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="org.springframework.test.context.junit4.SpringJUnit4ClassRunner" level="DEBUG"/>
+	<logger name="org.springframework.test.context.support.DependencyInjectionTestExecutionListener" level="DEBUG"/>
+	<logger name="org.springframework.beans.factory.xml.DefaultDocumentLoader" level="DEBUG"/>
+	<logger name="org.springframework.beans.factory.xml.PluggableSchemaResolver" level="DEBUG"/>
+	<logger name="org.springframework.context.support.GenericApplicationContext" level="DEBUG"/>
+	<logger name="org.dbunit.database.DatabaseConnection" level="DEBUG"/>
+	<logger name="mx.home.biblioteca" level="TRACE"/>
+
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+		<!-- <appender-ref ref="DB" /> -->
+	</root>
+</configuration>
